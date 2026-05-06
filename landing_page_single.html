@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Tổng Kho Tủ Rack & Vật Tư Mạng - Báo Giá Dự Án (B2B)</title>
+    
+    <!-- Tailwind CSS qua CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <script>
+        function scrollToForm() { 
+            document.getElementById('nhan-bao-gia').scrollIntoView({ behavior: 'smooth' }); 
+            document.getElementById('mobile-menu').classList.add('hidden');
+        }
+        function toggleMenu() { 
+            document.getElementById('mobile-menu').classList.toggle('hidden'); 
+        }
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert('Cảm ơn bạn! Yêu cầu báo giá dự án của bạn đã được gửi. Chuyên viên của chúng tôi sẽ liên hệ lại ngay trong 15 phút.');
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+    
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <i data-lucide="server" class="w-8 h-8 text-blue-600"></i>
+                    <span class="font-black text-2xl tracking-tight text-slate-800">Rack<span class="text-blue-600">Pro</span></span>
+                </div>
+                
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-8">
+                    <div class="flex items-center gap-2 text-slate-600 font-medium tracking-wide">
+                        <i data-lucide="phone" class="w-5 h-5 text-blue-600"></i>
+                        <span>0900.123.456</span>
+                    </div>
+                    <button onclick="scrollToForm()" class="bg-orange-500 hover:bg-orange-600 text-white px-7 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-orange-500/30 hover:-translate-y-0.5">
+                        Nhận Báo Giá Ngay
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2 text-slate-600" onclick="toggleMenu()">
+                    <i data-lucide="menu" class="w-7 h-7"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-lg">
+            <div class="px-4 py-8 space-y-6 flex flex-col items-center">
+                <div class="flex items-center gap-3 text-slate-700 font-bold text-xl">
+                    <i data-lucide="phone" class="w-6 h-6 text-blue-600"></i>
+                    <span>Hotline: 0900.123.456</span>
+                </div>
+                <button onclick="scrollToForm()" class="w-full bg-orange-500 text-white px-6 py-4 rounded-xl font-bold text-lg shadow-lg shadow-orange-500/30">
+                    Nhận Báo Giá Dự Án Ngay
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20">
+        <div class="absolute inset-0 z-0 bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=2000" alt="Data Center Server Racks" class="w-full h-full object-cover opacity-30" />
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900/90"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40 flex flex-col items-center text-center">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/30 text-sm font-bold mb-8 tracking-widest uppercase">
+                Tổng Kho Thiết Bị & Vật Tư Viễn Thông
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight max-w-5xl tracking-tight">
+                ĐỐI TÁC CUNG CẤP TỦ RACK & VẬT TƯ QUANG HÀNG ĐẦU
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-3xl leading-relaxed">
+                Phân phối sỉ lẻ Tủ Mạng, Tủ Server chính hãng quy mô lớn. Cam kết giá xuất xưởng, đầy đủ giấy tờ CO/CQ chứng nhận, giao hàng cực nhanh toàn quốc cho mọi dự án.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 sm:px-0">
+                <button onclick="scrollToForm()" class="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-4 md:px-12 md:py-5 rounded-full font-bold transition-all hover:scale-105 shadow-xl shadow-orange-500/30 flex items-center justify-center gap-3">
+                    Yêu Cầu Bảng Giá Ngay
+                    <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- USPs Section -->
+    <section class="py-16 md:py-20 bg-white relative -mt-8 mx-4 sm:mx-8 md:mx-auto max-w-7xl rounded-3xl shadow-xl z-20 border border-slate-100">
+        <div class="px-6 sm:px-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+                <!-- USP 1 -->
+                <div class="flex flex-col items-start">
+                    <div class="p-3 bg-blue-50 rounded-2xl mb-5">
+                        <i data-lucide="shield-check" class="w-10 h-10 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Hàng Chính Hãng 100%</h3>
+                    <p class="text-slate-600 font-medium leading-relaxed text-sm">Sản phẩm mới 100%, đạt tiêu chuẩn viễn thông quốc tế cho các dự án trọng điểm.</p>
+                </div>
+                <!-- USP 2 -->
+                <div class="flex flex-col items-start">
+                    <div class="p-3 bg-blue-50 rounded-2xl mb-5">
+                        <i data-lucide="tags" class="w-10 h-10 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Giá Gốc Tại Xưởng</h3>
+                    <p class="text-slate-600 font-medium leading-relaxed text-sm">Cam kết mức chiết khấu cực kỳ cạnh tranh, tối ưu chi phí thi công cho nhà thầu.</p>
+                </div>
+                <!-- USP 3 -->
+                <div class="flex flex-col items-start">
+                    <div class="p-3 bg-blue-50 rounded-2xl mb-5">
+                        <i data-lucide="file-check" class="w-10 h-10 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Đầy Đủ CO, CQ</h3>
+                    <p class="text-slate-600 font-medium leading-relaxed text-sm">Cung cấp hóa đơn, chứng từ nguồn gốc, chứng nhận chất lượng minh bạch, đầy đủ.</p>
+                </div>
+                <!-- USP 4 -->
+                <div class="flex flex-col items-start">
+                    <div class="p-3 bg-blue-50 rounded-2xl mb-5">
+                        <i data-lucide="headset" class="w-10 h-10 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Hỗ Trợ Kỹ Thuật 24/7</h3>
+                    <p class="text-slate-600 font-medium leading-relaxed text-sm">Đội ngũ kỹ sư dày dặn chuyên môn luôn sẵn sàng tư vấn và bảo hành tận nơi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Products Section -->
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-5 tracking-tight">DANH MỤC SẢN PHẨM CHỦ LỰC</h2>
+                <div class="w-24 h-1.5 bg-blue-600 mx-auto rounded-full mb-6"></div>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto font-medium">Nhà phân phối mang đến giải pháp vật tư mạng, phụ kiện quang và Tủ Server đa dạng, đáp ứng mọi quy mô.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1: Tủ Rack -->
+                <div class="bg-white rounded-3xl overflow-hidden flex flex-col shadow-xl border-2 border-blue-200 ring-2 ring-blue-500 lg:-translate-y-4 transition-all duration-300">
+                    <div class="bg-blue-600 text-white text-center py-2 text-sm font-bold tracking-widest uppercase">🥇 Bán Chạy Nhất</div>
+                    <div class="aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800" alt="Tủ Rack Chuyên Dụng" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                    </div>
+                    <div class="p-6 md:p-8 flex-1 flex flex-col">
+                        <h3 class="font-bold text-xl mb-5 leading-snug text-blue-700">Tủ Rack / Tủ Server Chuyên Dụng</h3>
+                        <ul class="space-y-3 mb-8 flex-1">
+                            <li class="flex items-start gap-3 text-sm text-slate-600 font-medium"><i data-lucide="box" class="w-5 h-5 text-blue-500 shrink-0"></i>Thép cường lực dày 1.2-2.0mm, sơn tĩnh điện.</li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 font-medium"><i data-lucide="box" class="w-5 h-5 text-blue-500 shrink-0"></i>Sẵn các loại 10U, 15U, 27U, 36U, 42U.</li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 font-medium"><i data-lucide="box" class="w-5 h-5 text-blue-500 shrink-0"></i>Thiết kế chuẩn 19 inch, cấu trúc thoáng khí.</li>
+                        </ul>
+                        <button onclick="scrollToForm()" class="w-full py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-500/30">Tư Vấn Tủ Rack</button>
+                    </div>
+                </div>
+
+                <!-- Product 2: Dây Nhảy Quang -->
+                <div class="bg-white rounded-3xl overflow-hidden flex flex-col shadow-md hover:shadow-xl border border-slate-200 transition-all duration-300">
+                    <div class="aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=800" alt="Dây nhảy quang" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                    </div>
+                    <div class="p-6 md:p-8 flex-1 flex flex-col">
+                        <h3 class="font-bold text-xl mb-5 leading-snug text-slate-800">Dây Nhảy Quang (Fiber Patch Cord)</h3>
+                        <ul class="space-y-3 mb-8 flex-1">
+                            <li class="flex items-start gap-3 text-sm text-slate-600 font-medium"><i data-lucide="check" class="w-5 h-5 text-blue-500 shrink-0"></i>Chuẩn Singlemode & Multimode (SC, LC, FC).</li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 font-medium"><i data-lucide="check" class="w-5 h-5 text-blue-500 shrink-0"></i>Suy hao chèn cực thấp < 0.2dB.</li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 font-medium"><i data-lucide="check" class="w-5 h-5 text-blue-500 shrink-0"></i>Độ uốn dẻo cao, chống gập gãy cáp.</li>
+                        </ul>
+                        <button onclick="scrollToForm()" class="w-full py-4 rounded-xl font-bold transition-all bg-slate-100 hover:bg-slate-200 text-slate-800">Tư Vấn Sản Phẩm Này</button>
+                    </div>
+                </div>
+
+                <!-- Product 3: Hộp Phối Quang ODF -->
+                <div class="bg-white rounded-3xl overflow-hidden flex flex-col shadow-md hover:shadow-xl border border-slate-200 transition-all duration-300">
+                    <div class="aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=800" alt="Hộp phối quang" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                    </div>
+                    <div class="p-6 md:p-8 flex-1 flex flex-col">
+                        <h3 class="font-bold text-xl mb-5 leading-snug text-slate-800">Hộp Phối Quang (ODF) Cao Cấp</h3>
+                        <ul class="space-y-3 mb-8 flex-1">
+                            <li class="flex items-start gap-3 text-sm text-slate-600 font-medium"><i data-lucide="check" class="w-5 h-5 text-blue-500 shrink-0"></i>Dung lượng đáp ứng từ 2FO đến 288FO.</li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 font-medium"><i data-lucide="check" class="w-5 h-5 text-blue-500 shrink-0"></i>Phụ kiện đồng bộ (khay hàn quang, vỏ kim loại).</li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 font-medium"><i data-lucide="check" class="w-5 h-5 text-blue-500 shrink-0"></i>Dễ dàng thiết kế thi công treo tường/vào tủ.</li>
+                        </ul>
+                        <button onclick="scrollToForm()" class="w-full py-4 rounded-xl font-bold transition-all bg-slate-100 hover:bg-slate-200 text-slate-800">Tư Vấn Sản Phẩm Này</button>
+                    </div>
+                </div>
+
+                <!-- Product 4: Ống HDPE -->
+                <div class="bg-white rounded-3xl overflow-hidden flex flex-col shadow-md hover:shadow-xl border border-slate-200 transition-all duration-300">
+                    <div class="aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                        <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=800" alt="Ống nhựa gân xoắn" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                    </div>
+                    <div class="p-6 md:p-8 flex-1 flex flex-col">
+                        <h3 class="font-bold text-xl mb-5 leading-snug text-slate-800">Ống Nhựa Gân Xoắn HDPE</h3>
+                        <ul class="space-y-3 mb-8 flex-1">
+                            <li class="flex items-start gap-3 text-sm text-slate-600 font-medium"><i data-lucide="check" class="w-5 h-5 text-blue-500 shrink-0"></i>Bảo vệ an toàn cáp ngầm, chịu đàn hồi lớn.</li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 font-medium"><i data-lucide="check" class="w-5 h-5 text-blue-500 shrink-0"></i>Chống ngập nước, cản trở hóa chất rỉ sét.</li>
+                            <li class="flex items-start gap-3 text-sm text-slate-600 font-medium"><i data-lucide="check" class="w-5 h-5 text-blue-500 shrink-0"></i>Đủ size chuẩn: 25/32, 40/50, 65/85, 130/175.</li>
+                        </ul>
+                        <button onclick="scrollToForm()" class="w-full py-4 rounded-xl font-bold transition-all bg-slate-100 hover:bg-slate-200 text-slate-800">Tư Vấn Sản Phẩm Này</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="py-24 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-6 leading-tight">Đối Tác Đáng Tin Cậy Cho Mọi Công Trình</h2>
+                    <p class="text-lg text-slate-600 font-medium mb-10 leading-relaxed">
+                        Hơn một thập kỷ đồng hành cùng các nhà thầu và doanh nghiệp viễn thông lớn nhất. Chúng tôi cam kết đem đến chất lượng vật tư vượt trội, chính sách bảo hành 1 đổi 1 và tiến độ chuẩn xác.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100 text-center md:text-left">
+                            <div class="text-4xl md:text-5xl font-black text-blue-600 mb-2">10+</div>
+                            <div class="text-slate-700 font-bold uppercase tracking-wider text-sm">Năm Kinh Nghiệm</div>
+                        </div>
+                        <div class="p-6 bg-orange-50 rounded-2xl border border-orange-100 text-center md:text-left">
+                            <div class="text-4xl md:text-5xl font-black text-orange-600 mb-2">5000+</div>
+                            <div class="text-slate-700 font-bold uppercase tracking-wider text-sm">Dự Án Đã Cấp Hàng</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fake Logos -->
+                <div class="bg-slate-50 p-8 md:p-12 rounded-3xl border border-slate-200 grid grid-cols-2 gap-6">
+                    <div class="bg-white py-10 px-4 rounded-2xl border border-slate-200 flex items-center justify-center shadow-sm opacity-70 hover:opacity-100 filter grayscale hover:grayscale-0 transition-all hover:scale-105">
+                        <div class="font-black text-lg md:text-xl tracking-widest uppercase text-center text-red-600">VIETTEL PARTNER</div>
+                    </div>
+                    <div class="bg-white py-10 px-4 rounded-2xl border border-slate-200 flex items-center justify-center shadow-sm opacity-70 hover:opacity-100 filter grayscale hover:grayscale-0 transition-all hover:scale-105">
+                        <div class="font-black text-lg md:text-xl tracking-widest uppercase text-center text-blue-700">VNPT NET</div>
+                    </div>
+                    <div class="bg-white py-10 px-4 rounded-2xl border border-slate-200 flex items-center justify-center shadow-sm opacity-70 hover:opacity-100 filter grayscale hover:grayscale-0 transition-all hover:scale-105">
+                        <div class="font-black text-lg md:text-xl tracking-widest uppercase text-center text-orange-500">FPT TELECOM</div>
+                    </div>
+                    <div class="bg-white py-10 px-4 rounded-2xl border border-slate-200 flex items-center justify-center shadow-sm opacity-70 hover:opacity-100 filter grayscale hover:grayscale-0 transition-all hover:scale-105">
+                        <div class="font-black text-lg md:text-xl tracking-widest uppercase text-center text-cyan-700">CMC CORP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Generation Form -->
+    <section id="nhan-bao-gia" class="py-24 bg-slate-900 relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+           <div class="absolute top-0 right-0 w-3/4 h-3/4 bg-blue-600/20 blur-[150px] rounded-full translate-x-1/3 -translate-y-1/3"></div>
+           <div class="absolute bottom-0 left-0 w-1/2 h-1/2 bg-orange-500/10 blur-[120px] rounded-full -translate-x-1/2 translate-y-1/2"></div>
+        </div>
+        
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-white rounded-[2rem] overflow-hidden shadow-2xl flex flex-col md:flex-row border border-slate-200">
+                <div class="md:w-5/12 bg-blue-600 p-10 md:p-14 text-white flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute inset-0 opacity-10 bg-cover bg-center mix-blend-overlay" style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=600')"></div>
+                    <div class="relative z-10">
+                        <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-sm font-bold tracking-widest uppercase mb-6 backdrop-blur-sm">Chính Sách B2B</span>
+                        <h3 class="text-3xl md:text-4xl font-black mb-6 leading-tight">Đăng Ký Nhận Báo Giá Dự Án Nhanh</h3>
+                        <p class="text-blue-100 mb-12 text-lg font-medium">Bạn cần lấy số lượng lớn? Để lại yêu cầu, hệ thống sẽ gửi báo giá tốt nhất trong 15 phút.</p>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-center gap-5">
+                                <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center backdrop-blur-md border border-white/20">
+                                    <i data-lucide="phone" class="w-6 h-6 text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="text-sm text-blue-200 uppercase tracking-wider font-bold mb-1">Tổng Đài Sale Dư Án</div>
+                                    <div class="font-black text-2xl">0900.123.456</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-5">
+                                <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center backdrop-blur-md border border-white/20">
+                                    <i data-lucide="mail" class="w-6 h-6 text-white"></i>
+                                </div>
+                                <div>
+                                    <div class="text-sm text-blue-200 uppercase tracking-wider font-bold mb-1">Email Hỗ Trợ Gửi File</div>
+                                    <div class="font-bold text-lg">duan@tu-rack-pro.vn</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-7/12 p-10 md:p-14">
+                    <form onsubmit="handleSubmit(event)" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-bold text-slate-700 mb-2">Họ Tên / Chức Vụ</label>
+                            <input type="text" id="name" required class="w-full px-5 py-4 rounded-xl border border-slate-300 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition-all font-semibold text-slate-800 placeholder-slate-400" placeholder="ThS. Nguyễn Văn A..." />
+                        </div>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="phone" class="block text-sm font-bold text-slate-700 mb-2">Số Điện Thoại Zalo <span class="text-red-500">*</span></label>
+                                <input type="tel" id="phone" required class="w-full px-5 py-4 rounded-xl border border-slate-300 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition-all font-semibold text-slate-800 placeholder-slate-400" placeholder="09xx..." />
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-bold text-slate-700 mb-2">Email Nhận Báo Giá</label>
+                                <input type="email" id="email" class="w-full px-5 py-4 rounded-xl border border-slate-300 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition-all font-semibold text-slate-800 placeholder-slate-400" placeholder="abc@congty.com" />
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-bold text-slate-700 mb-2">Danh mục vật tư / Số lượng thực tế</label>
+                            <textarea id="message" rows="4" class="w-full px-5 py-4 rounded-xl border border-slate-300 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition-all resize-none font-semibold text-slate-800 placeholder-slate-400" placeholder="Tôi cần mua 3 Tủ Rack 42U và 15 cuộn Ống nhựa xoắn HDPE..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full mt-4 bg-orange-500 hover:bg-orange-600 text-white font-black text-lg py-5 rounded-xl shadow-xl shadow-orange-500/30 transition-all hover:-translate-y-1 active:translate-y-0">
+                            XÁC NHẬN GỬI YÊU CẦU NGAY
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-12">
+            <div class="md:col-span-5">
+                <div class="flex items-center gap-2 mb-8">
+                    <i data-lucide="server" class="w-8 h-8 text-blue-500"></i>
+                    <span class="font-black text-2xl tracking-tight text-white">Rack<span class="text-blue-500">Pro</span> Vietnam</span>
+                </div>
+                <p class="text-slate-400 font-medium leading-relaxed max-w-sm mb-8">
+                    Nhà phân phối sỉ lẻ Tủ Rack Server, thiết bị viễn thông, và tủ hộp cáp mạng hàng đầu chuyên phân phối toàn quốc.
+                </p>
+            </div>
+            
+            <div class="md:col-span-4">
+                <h4 class="text-white font-black tracking-widest uppercase mb-8 text-sm">Thông Tin Tổng Đài</h4>
+                <ul class="space-y-5 text-slate-400 font-medium">
+                    <li class="flex items-start gap-4">
+                        <i data-lucide="map-pin" class="w-5 h-5 shrink-0 text-blue-500 mt-0.5"></i>
+                        <span class="leading-relaxed">KCN Quang Minh, Huyện Mê Linh, TP. Hà Nội, Vietnam</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <i data-lucide="phone" class="w-5 h-5 shrink-0 text-blue-500"></i>
+                        <span class="font-bold text-white">0900.123.456</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <i data-lucide="mail" class="w-5 h-5 shrink-0 text-blue-500"></i>
+                        <span>contact@tu-rack-pro.vn</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="md:col-span-3">
+                <h4 class="text-white font-black tracking-widest uppercase mb-8 text-sm">Chính Sách Khách Hàng</h4>
+                <ul class="space-y-4 font-bold">
+                    <li><a href="#" class="hover:text-blue-400 transition-colors">Bảo hành tủ kệ chính hãng</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition-colors">Công nợ cho Chủ Căn Hộ/Dự án</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition-colors">Dịch vụ setup Data Center</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-slate-900/50 text-sm font-semibold flex flex-col md:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 TỔNG KHO RACKPRO VẬT TƯ. Bản quyền thương hiệu độc quyền.</p>
+            <div class="flex gap-4 opacity-50">
+                <i data-lucide="box" class="w-5 h-5"></i>
+                <i data-lucide="server" class="w-5 h-5"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
